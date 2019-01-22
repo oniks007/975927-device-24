@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Arturs Miglans](https://up.htmlacademy.ru/htmlcss/24/user/975927).
-* Наставник: [ Максим Фарига ].
+* Наставник: [ Максим Фарига ](https://htmlacademy.ru/profile/maximfariga).
 
 
 ---
