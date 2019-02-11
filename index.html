@@ -4,34 +4,36 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
     <header class="main-header">
-
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="" height="" alt="Логотип магазина Device">
+        </a>
       <h1 class="visually-hidden">Магазин Device </h1>
 
       <form class="search">
-         <input type="search" name="search" id="search-content" value="Поиск по сайту">
-         <label for="search-content"></label>
-         <button type="submit" name="search-content">Найти</button>
+
+        <label for="search-content">
+         <input type="text" name="search" id="search-content" placeholder="Поиск по сайту">
+         </label>
+        <button type="submit" name="search-content">Найти</button>
       </form>
-        <a class="main-header-logo" >
-          <img src="img/index-logo.svg" width="" height="" alt="Логотип магазина Device">
-        </a>
+
+      <section> class="user-navigation">
+          <h2 class="visually-hidden"> User navigation</h2>
+          <a href="log-in.html">Вход</a>
+          <a href="troley.html">Корзина</a>
+          <a href="compare.html">Сравнить</a>
+      </section>
+
+
+
       <nav class="main-navigation" >
-
-        <ul class="site-navigation">
-          <li><a href="compare.html">Сравнить</a></li> <!--will need to add own class for css-->
-          <li><a href="troley.html">Корзина</a></li> <!--will need to add own class for css-->
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li class="login-link"><a href="log-in.html">Вход</a></li>
-        </ul>
-
-        <div class="dropdown">
-          <button class="dropdown-menu">Каталог товаров</button>
-
-         <div class="dropdown-content">
+       <ul class="site-navigation">
+        <li class="dropdown-menu">
+         <a href="item-cataloge">Каталог товаров</a>
+          <div class="dropdown-content">
            <ul>
              <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
              <li><a href="monopods.html">Моноподы для селфи</a></li>
@@ -41,78 +43,153 @@
              <li><a href="drone.html">Квадрокоптеры</a></li>
            </ul>
          </div>
-
-        </div>
+         </li>
+           <li><a href="delivery.html">Доставка</a></li>
+           <li><a href="warranty.html">Гарантия</a></li>
+           <li><a href="contacts.html">Контакты</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main class="container">
+      <main class="container">
 
-      <div class="slaidshow-container">
+        <div class="slaidshow-container">
+
+        <input type="radio" name="slaidshow" id="slide-1" value="slide-1">
+        <input type="radio" name="slaidshow" id="slide-2" value="slide-2">
+        <input type="radio" name="slaidshow" id="slide-3" value="slide-3">
+        </div>
+
+        <div class="slaidshow-controls">
+          <label for="slide-1" class="slider-butn"></label>
+          <label for="slide-2" class="slider-butn"></label>
+          <label for="slide-3" class="slider-butn"></label>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="slide-1">
+
+          <div class="slide-picture">
           <img src="selfi-stick.jpg" width="" height="" alt="Моноподы для селфи">
-            <p><b>Делай селфи,</b></p>
-            <p><b>как Бен стиллер!</b></p>
+          </div>
+
+          <div class="slide-description">
+            <span class="slider-number">01</span>
+            <p>Делай селфи,</p><br>
+            <p>как Бен стиллер!</p>
+            <div class="slide-text">
             <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
             <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          </div>
 
           <form method="get" action="monopods.html">
             <button type="submit">Подробнее</button>
           </form>
 
-          <table class="slide-1-description">
-            <tr class="slide-1-item1">
+
+          <table class="slide-description">
+            <tr class="slide-value">
               <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
             </tr>
-            <tr class="slide-1-item2">
+            <tr class="slide-header">
               <td>Длина палки</td>
               <td>Вес палки</td>
               <td>Материал</td>
             </tr>
           </table>
         </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="slide-2">
+          <div class="slide-picture">
           <img src="smart-watch.jpg" width="" height="" alt="Умные часы">
-            <p><b>Худеем</b></p>
-            <p><b>правильно!</b></p>
+          </div>
+
+          <div class="slide-description">
+            <span class="slider-number">02</span>
+            <p>Худеем</p><br>
+            <p>правильно!</p>
+            <div class="slide-text">
             <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы </p>
             <p>не пропускать занятия и соблюдать диету.</p>
+          </div>
 
-          <form method="get" action="smart-watch.html.html">
+           <form method="get" action="smart-watch.html">
             <button type="submit">Подробнее</button>
           </form>
 
-          <table class="slide-2-description">
-            <tr class="slide-2-item1">
+
+
+          <table  class="slide-description">
+            <tr class="slide-value">
               <td>48 часов</td>
             </tr>
-            <tr class="slide-2-item2">
+            <tr class="slide-header">
               <td>Без подзарядки</td>
             </tr>
           </table>
         </div>
+        </div>
+
+
+
+
+
+
+
 
         <div class="slide-3">
+          <div class="slide-picture">
           <img src="drone.jpg" width="" height="" alt="Квадрокоптер">
-            <p><b>Порхает как бабочка,</b></p>
-            <p><b>жалит как пчела!</b></p>
+        </div>
+
+        <div class="slide-description">
+          <span class="slider-number">03</span>
+            <p>Порхает как бабочка,</p><br>
+            <p>жалит как пчела!</p>
+          <div class="slide-text">
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен</p>
             <p>мощным лазером, замаскированным под стандартную камеру.</p>
+          </div>
 
-          <form method="get" action="drone.html">
+           <form method="get" action="drone.html">
             <button type="submit">Подробнее</button>
           </form>
 
-          <table class="slide-3-description">
-            <tr class="slide-3-item1">
+
+          <table  class="slide-description">
+            <tr class="slide-value">
               <td>800 м</td>
               <td>50 м</td>
             </tr>
-            <tr class="slide-3-item2">
+            <tr class="slide-header">
               <td>Дальность полета</td>
               <td>Радиус поражения</td>
             </tr>
@@ -120,101 +197,108 @@
         </div>
       </div>
 
+
+
+
+
+
+
+
+
+
       <section class="img-nav">
-       <a href="virtual-reality.html" >
-         <figure>
+        <h2 class="visually-hidden"> User image navigation</h2>
 
+       <a class="image-nav-item" href="virtual-reality.html" >
+
+           <div class="image-item">
             <img src="img.jpg" alt="Виртуальная реальность"/>
-            <figcaption >Виртуальная реальность</figcaption>
+          </div>
+             <p> Виртуальная реальность</p>
+      </a>
 
-         </figure>
-         </a>
-       <a href="monopods.html" >
-         <figure>
+       <a  class="image-nav-item" href="monopods.html" >
 
+            <div class="image-item">
             <img src="img1.jpg" alt="Моноподы для селфи"/>
-            <figcaption >Моноподы для селфи</figcaption>
-
-         </figure>
+          </div>
+           <p> Моноподы для селфи</p>
        </a>
-       <a href="action.html" >
-         <figure>
 
+       <a class="image-nav-item" href="action.html" >
+
+            <div class="image-item">
             <img src="img2.jpg" alt="Экшн-камеры"/>
-            <figcaption >Экшн-камеры</figcaption>
-
-         </figure>
+            </div>
+            <p>Экшн-камеры</p>
        </a>
-       <a href="fitness-bracelet.html" >
-         <figure>
 
+       <a class="image-nav-item" href="fitness-bracelet.html" >
+
+            <div class="image-item">
             <img src="img3.jpg" alt="Фитнесс-браслеты"/>
-            <figcaption >Фитнесс-браслеты</figcaption>
-
-         </figure>
+            </div>
+           <p> Фитнесс-браслеты</p>
        </a>
-       <a href="smart-watch.html" >
-         <figure>
 
+       <a class="image-nav-item" href="smart-watch.html" >
+
+            <div class="image-item">
             <img src="img4.jpg" alt="Умные часы"/>
-            <figcaption >Умные часы</figcaption>
-
-         </figure>
+            </div>
+           <p> Умные часы</p>
        </a>
-       <a href="drone.html" >
-         <figure>
 
+       <a class="image-nav-item" href="drone.html" >
+
+            <div class="image-item">
             <img src="img5.jpg" alt="Квадрокоптеры"/>
-            <figcaption >Квадрокоптеры</figcaption>
-
-         </figure>
+            </div>
+            <p>Квадрокоптеры</p>
        </a>
       </section>
 
-      <div class="info">
-        <div class="info-delivery">
 
-          <img src="deliveryman.jpg" width="" height="" alt="Доставка">
-            <p><b>Доставка</b></p>
+
+      <div class="info">
+        <input type="radio" name="info" id="delivery" value="delivery">
+        <input type="radio" name="info" id="warranty" value="warranty">
+        <input type="radio" name="info" id="credit" value="credit">
+
+        <div class="info-controls">
+          <label for="delivery" class="slider-name">Доставка</label>
+          <label for="warranty" class="slider-name">Гарантия</label>
+          <label for="credit" class="slider-name">Кредит</label>
+        </div>
+        <div class="info-slider">
+          <section class="info-slider info-delivery">
+            <h2 class="slider-name">Доставка</h2>
             <p> Мы с удовольствием доставим ваш товар прямо к вашему<br>
                 подъезду совершенно бесплатно! Ведь мы неплохо<br>
                 заработаем, поднимая его на ваш этаж.</p>
-
-          <form method="get" class="delivery-button">
-            <button type="submit">Доставка</button>
-          </form>
-        </div>
-
-        <div class="info-warranty">
-
-          <img src="warranty.jpg" width="" height="" alt="Гарантия">
-            <p><b>Гарантия</b></p>
+          </section>
+          <section class="info-slider info-warranty">
+            <h2 class="slider-name">Гарантия</h2>
             <p>Если из-за возгарания купленного у нас товара у вас сгорит<br>
                дом — не переживайте, мы выдадим вам новый.<br>
                Товар, не дом, конечно же.</p>
-
-          <form method="get" class="warranty-button">
-            <button type="submit">Гарантия</button>
-          </form>
-        </div>
-
-        <div class="info-credit">
-
-          <img src="credit.jpg" width="" height="" alt="Кредит">
-            <p><b>Кредит</b></p>
+          </section>
+          <section class="info-slider info-credit">
+            <h2 class="slider-name">Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные<br>
                консультанты подберут для вас наиболее выгодные <br>
                условия кредита. Выгодные для нашего банка, разумеется.</p>
-
-
-          <form method="get" class="credit-button">
-            <button type="submit">Кредит</button>
-          </form>
-
+          </section>
+          </div>
         </div>
-      </div>
-<br>
+
+
+
+
+
+
       <section class="manufacturers">
+        <h3 class="visually-hidden">Manufacturers</h3>
 
         <a href="https://www.dji.com">
           <img src="img/dji.jpg" alt="dji logo">
@@ -233,11 +317,15 @@
         </a>
       </section>
 
+
+
+
+
       <section class="shop-info">
-        <section>
-          <div>
-            <p><b>О нас</b></p>
-            <br>
+        <section class="contact-info">
+
+            <h3 class="slider-name">О нас</h3>
+
             <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
                который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
@@ -248,33 +336,33 @@
                 <li>Автотрейдинг</li>
                 <li>ЖелДорЭкспедиция</li>
              </ul>
-
-             <a href="more-about-us.html">
-             <form method="get" class="more-about-us">
-                <button type="submit">Подробнее о нас</button>
-             </form>
+              <a href="more-about-us.html">
+              <p>Подробнее о нас</p>
              </a>
+           </section>
 
-          </div>
-        </section>
 
-        <section>
-          <div>
-            <p><b>Контакты</b></p>
-            <br>
+
+
+
+
+          <section class="contact-info">
+           <h3 class="slider-name">Контакты</h3>
+
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
                проверить работоспособность покупки. Всякое бывает.</p>
-            <script>
 
+               <a class="place-map" href="map.html">
+                 <img src="map.jpg" alt="Место нахождения">
+               </a>
 
-            </script>
-
-            <form method="get" class="contacts">
-                <button type="submit">напишите нам</button>
-             </form>
-          </div>
+            <a href="more-about-us.html">
+              <p>напишите нам</p>
+             </a>
         </section>
       </section>
+
+    </main>
 
 
       <footer class="main-footer">
@@ -283,81 +371,39 @@
           <img src="img/index-footer-logo.svg" width="" height="" alt="Логотип магазина Device">
         </a>
 
-        <address>
+        <div>
+          <ul class="footer-user">
+             <li><a href="compare.html">Сравнить</a></li>
+             <li><a href="troley.html">Корзина</a></li>
+             <li class="login-link"><a href="log-in.html">Вход</a></li>
+          </ul>
+          </div>
+
+
+        <address class="contact-address">
           г. Москва, ул. Строителей, 15
 
-        </address>
-          <ul>
+        </address >
+
+          <ul class="footer-center">
             <li><a href="delivery.html">ДОСТАВКA</a></li>
             <li><a href="warranty.html.html"></a>ГАРАНТИЯ</li>
             <li><a href="contacts.html.html"></a>Контакты </li>
           </ul>
 
-        <div class="footer-social">
-          <ul>
+          <div class="footer-social">
+          <ul class="social">
             <li><a class="social-button" href="www.facebook.com"></a>Facebook</li>
             <li><a class="social-button" href="www.instagram.com"></a>Instagram</li>
             <li><a class="social-button" href="www.twitter.com"></a>Twitter</li>
           </ul>
+          </div>
 
-        </div>
+          <a href="https://htmlacademy.ru/">
+            <img src="hatml-academy-logo.jpg" alt="Логотип НТМЛ Академии">
+          </a>
+    </footer>
 
-        <div>
-          <ul>
-             <li><a href="compare.html">Сравнить</a></li>
-             <li><a href="troley.html">Корзина</a></li>
-             <li class="login-link"><a href="log-in.html">Вход</a></li>
-          </ul>
-        </div>
+</body>
 
-
-
-      </footer>
- </main>
-  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
