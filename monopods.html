@@ -7,7 +7,7 @@
 
   <body>
     <header class="main-header">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" width="" height="" alt="Логотип магазина Device">
         </a>
       <h1 class="visually-hidden">Магазин Device </h1>
@@ -22,7 +22,7 @@
 
       <section> class="user-navigation">
           <h2 class="visually-hidden"> User navigation</h2>
-          <a href="log-in.html">Вход</a>
+          <a href="log-in.html">Войти</a>
           <a href="troley.html">Корзина</a>
           <a href="compare.html">Сравнить</a>
       </section>
@@ -54,70 +54,59 @@
     <main class="monopods-conteiner">
           <section>
             <h1>Моноподы для селфи</h1>
-              <ul>
+              <ul class="breadscrumbs">
                 <li> <a href="index.html">Главная</a></li>
                 <li> <a href="item-cataloge.html">Каталог товаров</a></li>
-                <li>Моноподы для селфи</li>
+                <li> <a class="current">Моноподы для селфи</a></li>
               </ul>
           </section>
 
-
-          <section class="item-nav">
-
-            <div class="filter">
-              <p>Фильтр:</p>
-            <div class="sorting">
-              <p>Сортировка:</p>
-
-           <div class="type-sorting">
-
-             <a class="price">По цене</a>
-             <a href="type-wise">По типу</a>
-             <a href="popularity-wise">По популярности</a>
-           </div>
-
-            <div class="sort-arrows">
-             <a class="arrow-up" >Вверх</a>
-             <a class="arrow-down">Вниз</a>
-            </div>
-         </div>
-      </div>
-    </section>
 
 
     <section class="filter-conteiner">
 
         <div class="option-filter">
 
+           <fieldset> <!--Maybe like this?-->
+              <legend class="form-legend">Стоимость</legend>
+              <div class="range-control">
+                <div class="price-renge">
+                  <div class="scale">
 
-            <fieldset>
-              <div class="price-range-control">
-              <label class="main-description">Стоимость</label>
-              <input type="range" min="0" max="5000">
-              <span>от 0</span>
-                <span>до 5000</span>
+                  </div>
+                </div>
+                <div class="pointer pointer-min">
 
+                </div>
+                <div class="pointer pointer-max">
+
+                </div>
+              </div>
               <div class="selected-price">
+                <span>от 0</span>
+                <span>до 5000</span>
               </div>
-              </div>
-             </fieldset>
+            </fieldset>
+
+
+
 
             <fieldset>
               <span class="main-description">Цвет</span>
 
-              <input class="option-checkbox" type="checkbox" name="black" id="black">
+              <input class="option-checkbox" type="checkbox" name="colors[]" value="black" id="black">
                <label for="black">Черный</label>
 
-              <input class="option-checkbox" type="checkbox" name="white" id="white">
+              <input class="option-checkbox" type="checkbox" name="colors[]" value="white" id="white">
                <label for="white">Белый</label>
 
-              <input class="option-checkbox" type="checkbox" name="blue" id="blue">
+              <input class="option-checkbox" type="checkbox" name="colors[]" value="blue" id="blue">
                <label for="blue">Синий</label>
 
-              <input class="option-checkbox" type="checkbox" name="red" id="red">
+              <input class="option-checkbox" type="checkbox" name="colors[]" value="red" id="red">
                <label for="red">Красный</label>
 
-              <input class="option-checkbox" type="checkbox" name="pink" id="pink">
+              <input class="option-checkbox" type="checkbox" name="colors[]" value="pink" id="pink">
                <label for="pink">Розовый</label>
             </fieldset>
 
@@ -134,6 +123,7 @@
             <button class="option-button" type="submit">Показать</button>
 
         </div>
+      </section>
 
 
 
@@ -143,71 +133,91 @@
 
 
 
-
+      <section class="found-item-conteiner">
         <div class="shop-items">
 
+           <div class="sorting">
+              <p>Сортировка:</p>
+            </div>
+
+           <div class="type-sorting">
+
+             <a class="current">По цене</a>
+             <a href="www.device.com/monopods/sort=type">По типу</a>
+             <a href="www.device.com/monopods/sort=popularity">По популярности</a>
+           </div>
+
+            <div class="sort-direction">
+             <a class="direction-up" >Вверх</a>
+             <a class="direction-down">Вниз</a>
+            </div>
+          </div>
+
+
             <article class="found-item">
+
+
               <img class="item-img" src="item-1.jpg" width="" height="" alt="unprofessional stick">
               <div class="item-change">
                 <a class="item-change-buy button-to-basket" href="basket.html">В корзину</a>
-                <a class="item-compare" href="">Добавить к сравнению</a>
+                <a class="item-compare" href="www.device.com/monopods/add=compare">Добавить к сравнению</a>
               </div>
-              <a class="item-name" href="unprofessional-stick.html">Любительская селфи-палка</a>
-              <span>500 руб.</span>
+              <a class="item-name" href="unprofessional-stick.html">Любительская селфи-палка
+              <span class="item-price">500 руб.</span></a>
               </article>
 
               <article class="found-item">
               <img class="item-img" src="item-2.jpg" width="" height="" alt="professional stick">
               <div class="item-change">
                 <a class="item-change-buy button-to-basket" href="basket.html">В корзину</a>
-                <a class="item-compare" href="">Добавить к сравнению</a>
+                <a class="item-compare" href="www.device.com/monopods/add=compare">Добавить к сравнению</a>
               </div>
-              <a class="item-name" href="professional-stick.html"> Профессиональная<br>
-                                                                   селфи-палка</a>
-              <span>1500 руб.</span>
+              <a class="item-name" href="professional-stick.html"> Профессиональная
+                                                                   селфи-палка
+              <span class="item-price"> 1500 руб.</span></a>
               </article>
 
               <article class="found-item">
               <img class="item-img" src="item-3.jpg" width="" height="" alt="floating stick">
               <div class="item-change">
                 <a class="item-change-buy button-to-basket" href="basket.html">В корзину</a>
-                <a class="item-compare" href="">Добавить к сравнению</a>
+                <a class="item-compare" href="www.device.com/monopods/add=compare">Добавить к сравнению</a>
               </div>
-              <a class="item-name" href="floating-stick.html"> Непотопляемая селфи-палка</a>
-              <span>2500 руб.</span>
+              <a class="item-name" href="floating-stick.html"> Непотопляемая селфи-палка
+              <span class="item-price">2500 руб.</span></a>
               </article>
 
                <article class="found-item">
               <img class="item-img" src="item-4.jpg" width="" height="" alt="follow me stick">
               <div class="item-change">
                 <a class="item-change-buy button-to-basket" href="basket.html">В корзину</a>
-                <a class="item-compare" href="">Добавить к сравнению</a>
+                <a class="item-compare" href="www.device.com/monopods/add=compare">Добавить к сравнению</a>
               </div>
-              <a class="item-name" href="ffollow-me-stick.html"> Селфи-палка<br>
-                                                                «Следуй за мной»</a>
-              <span>4900 руб.</span>
+              <a class="item-name" href="ffollow-me-stick.html"> Селфи-палка
+                                                                «Следуй за мной»
+              <span class="item-price">4900 руб.</span></a>
               </article>
 
-          </div>
-          <div class="found-item-nav">
-          <ul class="catalog-footer">
+
+
+          <ul class="pagination">
             <li class="catalog-list-back">
-              <a href="">Назад</a>
+              <a href="www.device.com/monopods-selfi-stick/3.html">Назад</a>
             </li>
             <li class="catalog-footer-center">
-              <a href="">1</a>
+              <a>1</a>
             </li>
             <li>
-              <a href="">2</a>
+              <a href="www.device.com/monopods-selfi-stick/2.html">2</a>
             </li>
             <li>
-              <a href="">3</a>
+              <a href="www.device.com/monopods-selfi-stick/3.html">3</a>
             </li>
             <li class="catalog-list-forward">
-              <a href="">Вперед</a>
+              <a href="www.device.com/monopods-selfi-stick/2.html">Вперед</a>
             </li>
           </ul>
-        </div>
+
     </section>
 
    <footer class="main-footer">
@@ -216,13 +226,13 @@
           <img src="img/index-footer-logo.svg" width="" height="" alt="Логотип магазина Device">
         </a>
 
-        <div>
+
           <ul class="footer-user">
              <li><a href="compare.html">Сравнить</a></li>
              <li><a href="troley.html">Корзина</a></li>
-             <li class="login-link"><a href="log-in.html">Вход</a></li>
+             <li class="login-link"><a href="log-in.html">Войти </a></li>
           </ul>
-          </div>
+
 
 
         <address class="contact-address">
@@ -236,13 +246,13 @@
             <li><a href="contacts.html.html"></a>Контакты </li>
           </ul>
 
-          <div class="footer-social">
+
           <ul class="social">
             <li><a class="social-button" href="www.facebook.com"></a>Facebook</li>
             <li><a class="social-button" href="www.instagram.com"></a>Instagram</li>
             <li><a class="social-button" href="www.twitter.com"></a>Twitter</li>
           </ul>
-          </div>
+
 
           <a href="https://htmlacademy.ru/">
             <img src="hatml-academy-logo.jpg" alt="Логотип НТМЛ Академии">
