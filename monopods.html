@@ -65,7 +65,7 @@
 
     <section class="filter-conteiner">
 
-        <div class="option-filter">
+        <form class="option-filter">
 
            <fieldset> <!--Maybe like this?-->
               <legend class="form-legend">Стоимость</legend>
@@ -92,7 +92,8 @@
 
 
             <fieldset>
-              <span class="main-description">Цвет</span>
+               <legend class="form-legend">Цвет</legend>
+
 
               <input class="option-checkbox" type="checkbox" name="colors[]" value="black" id="black">
                <label for="black">Черный</label>
@@ -111,7 +112,8 @@
             </fieldset>
 
             <fieldset>
-              <span class="main-description">Bluetooth</span>
+               <legend class="form-legend">Bluetooth</legend>
+
 
               <input class="option-radio" type="radio" value="Есть" name="bluetooth" id="bluetooth-yes">
               <label for="bluetooth-yes">Есть</label>
@@ -122,7 +124,7 @@
 
             <button class="option-button" type="submit">Показать</button>
 
-        </div>
+        </form>
       </section>
 
 
@@ -134,10 +136,10 @@
 
 
       <section class="found-item-conteiner">
-        <div class="shop-items">
+
 
            <div class="sorting">
-              <p>Сортировка:</p>
+              <p class="sorting-title">Сортировка:</p>
             </div>
 
            <div class="type-sorting">
@@ -148,12 +150,13 @@
            </div>
 
             <div class="sort-direction">
-             <a class="direction-up" >Вверх</a>
-             <a class="direction-down">Вниз</a>
+             <a class="direction-up" href="#" >Вверх</a>
+             <a class="direction-down" href="#">Вниз</a>
             </div>
-          </div>
+            </section>
 
 
+            <section class="found-item-list">
             <article class="found-item">
 
 
@@ -197,15 +200,16 @@
                                                                 «Следуй за мной»
               <span class="item-price">4900 руб.</span></a>
               </article>
+            </section>
 
 
 
           <ul class="pagination">
-            <li class="catalog-list-back">
+            <li class="pagination-back">
               <a href="www.device.com/monopods-selfi-stick/3.html">Назад</a>
             </li>
-            <li class="catalog-footer-center">
-              <a>1</a>
+            <li>
+              <a class="current" href="www.device.com/monopods-selfi-stick/1.html">1</a>
             </li>
             <li>
               <a href="www.device.com/monopods-selfi-stick/2.html">2</a>
@@ -213,7 +217,7 @@
             <li>
               <a href="www.device.com/monopods-selfi-stick/3.html">3</a>
             </li>
-            <li class="catalog-list-forward">
+            <li class="pagination-forward">
               <a href="www.device.com/monopods-selfi-stick/2.html">Вперед</a>
             </li>
           </ul>
@@ -242,15 +246,15 @@
 
           <ul class="footer-center">
             <li><a href="delivery.html">ДОСТАВКA</a></li>
-            <li><a href="warranty.html.html"></a>ГАРАНТИЯ</li>
-            <li><a href="contacts.html.html"></a>Контакты </li>
+            <li><a href="warranty.html"> ГАРАНТИЯ</a></li>
+            <li><a href="contacts.html"> Контакты</a> </li>
           </ul>
 
 
           <ul class="social">
-            <li><a class="social-button" href="www.facebook.com"></a>Facebook</li>
-            <li><a class="social-button" href="www.instagram.com"></a>Instagram</li>
-            <li><a class="social-button" href="www.twitter.com"></a>Twitter</li>
+            <li><a class="social-button" href="www.facebook.com">Facebook</a></li>
+            <li><a class="social-button" href="www.instagram.com">Instagram</a></li>
+            <li><a class="social-button" href="www.twitter.com">Twitter</a></li>
           </ul>
 
 
