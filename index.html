@@ -6,17 +6,17 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header" >
     <a class="main-header-logo">
       <img src="img/logo/logo-device.svg" width="163px" height="35px" alt="Логотип магазина Device">
     </a>
     <h1 class="visually-hidden">Магазин Device </h1>
 
-    <form class="search">
+    <form class="search" name="search-content" action="/action_page.html" method="get">
 
       <label for="search-content">
        <img src="img/icon/icon-search.svg">
-       <input type="text" name="search" id="search-content" placeholder="Поиск по сайту">
+       <input type="text" name="search" id="search-content" placeholder="Поиск по сайту" required>
      </label>
      <button type="submit" name="search-content">Найти</button>
    </form>
@@ -317,13 +317,13 @@
    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
    проверить работоспособность покупки. Всякое бывает.</p>
 
-   <div class="map-popup" id="myMap">
    <a class="place-map" href="map.html">
      <img src="img/contact-info/map.png" alt="Место нахождения">
    </a>
 
+   <div class="map-popup" id="myMap">
     <img src="img/contact-info/map-popup.png" alt="Место нахождения">
-     <button type="button" class="btn cancel" onclick="closeMap()"><img src="img/modal-close.svg"></button>
+     <button type="button" class="btn cancel" ><img src="img/modal-close.svg"> </button>
   </div>
 
    <a href="more-about-us.html">
@@ -335,19 +335,19 @@
 
   <form class="form-container">
 
-    <label for="name"><b>Ваше имя</b></label>
+    <label for="name">Ваше имя</label>
     <input type="text" placeholder="Представтесь, пожалуйста" name="name" required>
 
-    <label for="email"><b>Ваш е-mail</b></label>
-    <input type="text" placeholder="Для отправки ответа" name="email" required>
+    <label for="email">Ваш е-mail</label>
+    <input type="email" placeholder="Для отправки ответа" name="email" required>
 
-    <label for="text-area"><b>Текст письма:</b></label>
-    <textarea rows="" cols="" placeholder="В свободной  форме"  name="text-area" required ></textarea>
+    <label for="message">Текст письма:</label>
+    <textarea rows="12" cols="100" placeholder="В свободной  форме"  name="message" required ></textarea>
 
 
     <button type="submit" class="btn">Отправить</button>
 
-    <button type="button" class="btn cancel" onclick="closeForm()"><img src="img/modal-close.svg"></button>
+    <button type="button" class="btn cancel"><img src="img/modal-close.svg"></button>
   </form>
 </div>
 
