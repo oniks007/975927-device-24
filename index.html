@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -34,7 +37,7 @@
   <nav class="main-navigation" >
    <ul class="site-navigation">
     <li class="dropdown-menu">
-     <a href="item-cataloge.html">Каталог товаров <img src="img/icon/icon-plus.svg"></a>
+     <a href="item-cataloge.html" class="nav-bold" >Каталог товаров <img src="img/icon/icon-plus.svg"></a>
      <div class="dropdown-content">
        <ul>
          <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
@@ -46,9 +49,9 @@
        </ul>
      </div>
    </li>
-   <li><a href="delivery.html">Доставка</a></li>
-   <li><a href="warranty.html">Гарантия</a></li>
-   <li><a href="contacts.html">Контакты</a></li>
+   <li class="nav-bold"><a href="delivery.html">Доставка</a></li>
+   <li class="nav-bold"><a href="warranty.html">Гарантия</a></li>
+   <li class="nav-bold"><a href="contacts.html">Контакты</a></li>
  </ul>
 </nav>
 </header>
@@ -56,7 +59,7 @@
 <main class="container">
 
 
-  <div class="slider">
+  <section class="slider">
     <input type="radio" name="slaidshow" id="slide-1" value="slide-1">
     <input type="radio" name="slaidshow" id="slide-2" value="slide-2">
     <input type="radio" name="slaidshow" id="slide-3" value="slide-3">
@@ -158,6 +161,7 @@
         </table>
       </div>
     </div>
+  </section>
 
 
 
@@ -265,20 +269,20 @@
 <section class="manufacturers">
   <h3 class="visually-hidden">Производители</h3>
 
-  <a href="https://www.dji.com">
-    <img src="img/dji.jpg" alt="dji logo">
+  <a href="https://www.dji.com" >
+    <img src="img/company/dji1.png" alt="dji logo">
   </a>
 
   <a href="http://www.sp-gadgets.com/">
-    <img src="img/sp-g.jpg" alt="sp-gadgets">
+    <img src="img/company/sp1.png" alt="sp-gadgets">
   </a>
 
   <a href="https://gopro.com/">
-    <img src="img/gopro.jpg" alt="gopro">
+    <img src="img/company/gopro1.png" alt="gopro">
   </a>
 
   <a href="https://www.vive.com">
-    <img src="img/vive.jpg" alt="vive">
+    <img src="img/company/vive1.png" alt="vive">
   </a>
 </section>
 
@@ -288,6 +292,7 @@
 
 <section class="shop-info">
   <section class="contact-info">
+    <div class="decorative"></div>
 
     <h3 class="slider-name">О нас</h3>
 
@@ -301,9 +306,12 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
+    <span class="btn-more-info">
     <a href="more-about-us.html">
       Подробнее о нас
+
     </a>
+    </span>
   </section>
 
 
@@ -312,6 +320,8 @@
 
 
   <section class="contact-info">
+    <div class="decorative"></div>
+
    <h3 class="slider-name">Контакты</h3>
 
    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -322,18 +332,19 @@
    </a>
 
    <div class="map-popup" id="myMap">
+    <button type="button" class="btn cancel" ><img src="img/modal-close.svg">Закрыть</button>
     <img src="img/contact-info/map-popup.png" alt="Место нахождения">
-     <button type="button" class="btn cancel" ><img src="img/modal-close.svg">Закрыть</button>
-  </div>
 
+  </div>
+   <span class="btn-more-info">
    <a href="more-about-us.html">
     напишите нам
   </a>
-
+   </span>
 
   <div class="form-popup" id="myForm">
-
-  <form class="form-container">
+    <button type="button" class="btn-cancel"><img src="img/modal-close.svg">Закрыть</button>
+  <form class="form-container" name="contact" method="post" action="/">
 
     <label for="name">Ваше имя</label>
     <input type="text" placeholder="Представтесь, пожалуйста" name="name" required>
@@ -347,7 +358,7 @@
 
     <button type="submit" class="btn">Отправить</button>
 
-    <button type="button" class="btn cancel"><img src="img/modal-close.svg">Закрыть</button>
+
   </form>
 </div>
 
@@ -361,16 +372,16 @@
 <footer class="main-footer">
 
   <a class="main-footer-logo" >
-    <img src="img/logo/logo-device.svg" width="163px" height="35px" alt="Логотип магазина Device">
+    <img src="img/logo/logo-footer.png" width="163px" height="35px" alt="Логотип магазина Device">
   </a>
 
 
 
 
   <ul class="footer-user">
-   <li><a href="compare.html"><img src="img/icon/icon-compare.svg"> Сравнить</a></li>
-   <li><a href="troley.html"><img src="img/icon/icon-cart.svg"> Корзина</a></li>
-   <li class="login-link"><a href="img/log-in.html"><img src="icon/icon-user.svg"> Войти</a></li>
+   <li><a href="compare.html"><img src="img/footer/footer-compare.png"> Сравнить</a></li>
+   <li><a href="troley.html"><img src="img/footer/footer-cart.png"> Корзина</a></li>
+   <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png"> Войти</a></li>
  </ul>
 
 
