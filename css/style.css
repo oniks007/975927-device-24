@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy',
     src: url('fonts/gilroyextrabold.woff2') format('woff2'),
          url('fonts/gilroyextrabold.woff') format('woff');
     font-weight: 900;
@@ -11,7 +11,7 @@
 
 }
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy',
     src: url('fonts/gilroylight.woff2') format('woff2'),
          url('fonts/gilroylight.woff') format('woff');
     font-weight: 300;
@@ -19,7 +19,7 @@
 
 }
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans',
     src: url('fonts/opensanslight.woff2') format('woff2'),
          url('fonts/opensanslight.woff') format('woff');
     font-weight: 300;
@@ -27,7 +27,7 @@
 
 }
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans',
     src: url('fonts/opensans.woff2') format('woff2'),
          url('fonts/opensans.woff') format('woff');
     font-weight: 400;
@@ -57,12 +57,17 @@ a:active {
     opacity: 0.3;
 }
 .serarch-content {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
+
 }
 .visually-hidden {
-    display: none;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .slider {
@@ -75,7 +80,8 @@ color: #000000;
 font-family: "Open Sans";
 font-size: 15px;
 line-height: 30px;
-letter-spacing: 0.15px;
+font-weight: 300;
+letter-spacing: 0.01em;
 }
 .nav-bold{
 
@@ -86,7 +92,7 @@ font-weight: 900;
 line-height: 24px;
 text-transform: uppercase;
 letter-spacing: 3.6px;
-text-decoration: none;
+
 }
 .dropdown-content {
 font-family: "Open Sans","Arial",sans-serif;
@@ -101,7 +107,7 @@ font-weight: 900;
 color: #000000;
 line-height: 24px;
 letter-spacing: 0.18px;
-background-color: #f8e296;
+background-color: #f7e296;
 }
 .map-popup{
     display: none;
@@ -109,7 +115,9 @@ background-color: #f8e296;
 .form-popup{
     display: none;
 }
-.decorative{
+.slider-name::before {
+content: "";
+position: absolute;
 width: 80px;
 height: 7px;
 background-color: #000000;
@@ -126,6 +134,7 @@ letter-spacing: 0.21px;
 color: #000000;
 font-family: "Gilroy","Arial",sans-serif;
 font-size: 16px;
+line-height: 40px;
 font-weight: 900;
 }
 .btn-more-info{
@@ -149,8 +158,8 @@ color: #ffffff;
 font-family: "Open Sans","Arial",sans-serif;
 font-size: 15px;
 font-weight: 300;
-line-height: 30px;
-letter-spacing: 0.15px;
+line-height: 36px;
+letter-spacing: 0.01em;
 text-align: right;
 }
 .contact-address{
@@ -178,13 +187,7 @@ opacity: 0.3;
 text-align: center;
 
 }
-.footer-decorative{
-    content: "";
-    left: 0;
-    width: 80px;
-    height: 7px;
-    background-color: #f7e184;
-}
+
  .monopods-conteiner h1{
 color: #000000;
 font-family: "Gilroy","Arial",sans-serif;
@@ -196,7 +199,7 @@ letter-spacing: 0.17px;
 .breadscrumbs{
 opacity: 0.3;
 color: #000000;
-font-family: "Open Sans","Arial",sans-serif
+font-family: "Open Sans","Arial",sans-serif;
 font-size: 14px;
 font-weight: 300;
 line-height: 24px;
@@ -229,20 +232,18 @@ letter-spacing: 0.91px;
 }
 
 
-.type-sorting .current {
-color: #000000;
-font-family: "Open Sans","Arial",sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
-}
+
 .type-sorting{
-opacity: 0.3;
 color: #000000;
 font-family: "Open Sans","Arial",sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 18px;
+opacity: 0.3;
+text-decoration: none;
+}
+.type-sorting .current {
+opacity: 1;
 }
  .direction-up{
 width: 11px;
@@ -259,7 +260,7 @@ letter-spacing: 0.18px;
  }
  .item-price{
 color: #464646;
-font-family: Gilroy;
+font-family: "Gilroy","Arial",sans-serif;
 font-size: 16px;
 font-weight: 300;
 line-height: 24px;
