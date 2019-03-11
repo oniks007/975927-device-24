@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -15,43 +16,54 @@
     </a>
     <h1 class="visually-hidden">Магазин Device </h1>
 
-    <form class="search" name="search-content" action="/action_page.html" method="get">
+<ul class="main-nav-list">
 
-      <label for="search-content">
-       <img src="img/icon/icon-search.svg">
-       <input type="text" name="search" id="search-content" placeholder="Поиск по сайту" required>
-     </label>
-     <button type="submit" name="search-content">Найти</button>
-   </form>
+  <li class="main-nav-search">
+          <form class="search ">
+          <input type="search" placeholder="Поиск по сайту" id="search-item" name="search" class="search-input" >
 
-   <section class="user-navigation">
-    <h2 class="visually-hidden"> User navigation</h2>
+            <button type="submit" class="search-button" aria-label="Поиск">Найти</button>
+          </form>
+</li>
+
+ <h2 class="visually-hidden"> User navigation</h2>
+    <li class="login">
     <a href="log-in.html"><img src="img/icon/icon-user.svg"> Войти</a>
+  </li>
+  <li class="compare">
     <a href="compare.html"><img src="img/icon/icon-compare.svg"> Сравнить</a>
+  </li>
+  <li class="cart">
     <a href="troley.html"><img src="img/icon/icon-cart.svg"> Корзина</a>
+  </li>
 
-  </section>
-
+</ul>
 
 
   <nav class="main-navigation" >
    <ul class="site-navigation">
     <li class="dropdown-menu">
-     <a href="item-cataloge.html"><span class="nav-bold">Каталог товаров</span> <img src="img/icon/icon-plus.svg"></a>
+     <a class="nav-cataloge" href="item-cataloge.html"><span class="nav-bold">Каталог товаров</span> <img src="img/icon/icon-plus.svg"></a>
      <div class="dropdown-content">
-       <ul>
-         <li><a href="virtual-reality.html">Виртуальная реальность</a></li>
-         <li><a href="monopods.html">Моноподы для селфи</a></li>
-         <li><a href="action.html">Экшн-камеры</a></li>
-         <li><a href="fitness-bracelet.html">Фитнесс-браслеты</a></li>
-         <li><a href="smart-watch.html">Умные часы</a></li>
-         <li><a href="drone.html">Квадрокоптеры</a></li>
+       <ul class="dropdown-content-column">
+
+         <li class="dropdown-column"><a href="virtual-reality.html">Виртуальная реальность</a>
+         <a href="monopods.html">Моноподы для селфи</a>
+         <a href="action.html">Экшн-камеры</a>
+         </li>
+
+         <li class="dropdown-column"><a href="fitness-bracelet.html">Фитнесс-браслеты</a>
+         <a href="smart-watch.html">Умные часы</a>
+         </li>
+
+         <li class="dropdown-column"><a href="drone.html">Квадрокоптеры</a>
+         </li>
        </ul>
      </div>
    </li>
-   <li><a href="delivery.html"><span class="nav-bold">Доставка</span></a></li>
-   <li><a href="warranty.html"><span class="nav-bold">Гарантия</span></a></li>
-   <li><a href="contacts.html"><span class="nav-bold">Контакты</span></a></li>
+   <li class="nav-delivery"><a href="delivery.html"><span class="nav-bold">Доставка</span></a></li>
+   <li class="nav-warranty"><a href="warranty.html"><span class="nav-bold">Гарантия</span></a></li>
+   <li class="nav-contacts"><a href="contacts.html"><span class="nav-bold">Контакты</span></a></li>
  </ul>
 </nav>
 </header>
@@ -174,54 +186,58 @@
 
     <section class="img-nav">
       <h2 class="visually-hidden"> Графическоя нвигация </h2>
+<div class="imageitems">
 
-      <a class="image-nav-item" href="virtual-reality.html" >
+      <a class="image-nav-item"  href="virtual-reality.html" >
 
-       <div class="image-item">
-        <img src="img/img-nav/popular-1.svg" alt="Виртуальная реальность"/>
+       <div class="image-item item-vr">
+        <img  class="main-item-img"  src="img/img-nav/popular-1.svg" alt="Виртуальная реальность"/>
       </div>
-      <p> Виртуальная реальность</p>
+      <p class="img-nav-paragraf"> Виртуальная <br>реальность</p>
     </a>
 
     <a  class="image-nav-item" href="monopods.html" >
 
-      <div class="image-item">
-        <img src="img/img-nav/popular-2.svg" alt="Моноподы для селфи"/>
+      <div class="image-item item-selfie">
+        <img class="main-item-img" src="img/img-nav/popular-2.svg" alt="Моноподы для селфи"/>
       </div>
-      <p> Моноподы для селфи</p>
+      <p class="img-nav-paragraf"> Моноподы для селфи</p>
     </a>
 
     <a class="image-nav-item" href="action.html" >
 
-      <div class="image-item">
-        <img src="img/img-nav/popular-3.svg" alt="Экшн-камеры"/>
+      <div class="image-item item-cam">
+        <img  class="main-item-img"  src="img/img-nav/popular-3.svg" alt="Экшн-камеры"/>
       </div>
-      <p>Экшн-камеры</p>
+      <p class="img-nav-paragraf">Экшн-камеры</p>
     </a>
 
     <a class="image-nav-item" href="fitness-bracelet.html" >
 
-      <div class="image-item">
-        <img src="img/img-nav/popular-4.svg" alt="Фитнесс-браслеты"/>
+      <div class="image-item item-brac">
+        <img  class="main-item-img"  src="img/img-nav/popular-4.svg" alt="Фитнесс-браслеты"/>
       </div>
-      <p> Фитнесс-браслеты</p>
+      <p class="img-nav-paragraf"> Фитнесс-браслеты</p>
     </a>
 
     <a class="image-nav-item" href="smart-watch.html" >
 
-      <div class="image-item">
-        <img src="img/img-nav/popular-5.svg" alt="Умные часы"/>
+      <div class="image-item item-watch">
+        <img  class="main-item-img"  src="img/img-nav/popular-5.svg" alt="Умные часы"/>
       </div>
-      <p> Умные часы</p>
+      <p class="img-nav-paragraf"> Умные часы</p>
     </a>
 
     <a class="image-nav-item" href="drone.html" >
 
-      <div class="image-item">
-        <img src="img/img-nav/popular-6.svg" alt="Квадрокоптеры"/>
+      <div class="image-item item-drone">
+        <img  class="main-item-img" src="img/img-nav/popular-6.svg" alt="Квадрокоптеры"/>
       </div>
-      <p>Квадрокоптеры</p>
+      <p class="img-nav-paragraf">Квадрокоптеры</p>
     </a>
+
+
+  </div>
   </section>
 
 
@@ -269,20 +285,20 @@
 <section class="manufacturers">
   <h3 class="visually-hidden">Производители</h3>
 
-  <a href="https://www.dji.com" >
-    <img src="img/company/dji1.png" alt="dji logo">
+  <a class="brands " href="https://www.dji.com" >
+    <img class="brands-dji" src="img/company/dji1.png" alt="dji logo">
   </a>
 
-  <a href="http://www.sp-gadgets.com/">
-    <img src="img/company/sp1.png" alt="sp-gadgets">
+  <a class="brands " href="http://www.sp-gadgets.com/">
+    <img class="brands-sp" src="img/company/sp1.png" alt="sp-gadgets">
   </a>
 
-  <a href="https://gopro.com/">
-    <img src="img/company/gopro1.png" alt="gopro">
+  <a class="brands" href="https://gopro.com/">
+    <img class="brands-gopro" src="img/company/gopro1.png" alt="gopro">
   </a>
 
-  <a href="https://www.vive.com">
-    <img src="img/company/vive1.png" alt="vive">
+  <a class="brands" href="https://www.vive.com">
+    <img class="brands-vive" src="img/company/vive1.png" alt="vive">
   </a>
 </section>
 
@@ -290,24 +306,25 @@
 
 
 
-<section class="shop-info">
-  <section class="contact-info">
-    <div class="decorative"></div>
+<section class="shop-info clearfix">
+
+  <section class="about-us">
+
 
     <h3 class="slider-name">О нас</h3>
-
+    <div class="shop-info-description">
     <p>Огромный выбор гаджетов не оставит равнодушным гика,
     который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки
     России! DEVICE работает со многими транспортными компаниями:</p>
-
+    </div>
     <ul class="transport-company">
       <li>Деловые Линии</li>
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
     <span class="btn-more-info">
-    <a href="more-about-us.html">
+    <a class="btn-info" href="more-about-us.html">
       Подробнее о нас
 
     </a>
@@ -319,8 +336,8 @@
 
 
 
-  <section class="contact-info">
-    <div class="decorative"></div>
+  <section class="contact-us">
+
 
    <h3 class="slider-name">Контакты</h3>
 
@@ -337,7 +354,7 @@
 
   </div>
    <span class="btn-more-info">
-   <a href="more-about-us.html">
+   <a class="btn-info" href="more-about-us.html">
     напишите нам
   </a>
    </span>
@@ -370,7 +387,7 @@
 
 
 <footer class="main-footer">
-
+<div class="footer-box clearfix">
   <a class="main-footer-logo" >
     <img src="img/logo/logo-footer.png" width="163px" height="35px" alt="Логотип магазина Device">
   </a>
@@ -379,9 +396,10 @@
 
 
   <ul class="footer-user">
+   <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png"> Войти</a></li>
    <li><a href="compare.html"><img src="img/footer/footer-compare.png"> Сравнить</a></li>
    <li><a href="troley.html"><img src="img/footer/footer-cart.png"> Корзина</a></li>
-   <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png"> Войти</a></li>
+
  </ul>
 
 
@@ -396,9 +414,9 @@
   <li><a href="warranty.html.html">ГАРАНТИЯ</a></li>
   <li><a href="contacts.html.html">Контакты</a> </li>
 </ul>
-
-<span class="footer-decorative">
-</span>
+ <div class="phone">
+ <a href="#">Тел.: +7 (495) 495-95-95</a>
+</div>
 
 
 <ul class="social">
@@ -408,8 +426,9 @@
 </ul>
 
 <a href="https://htmlacademy.ru/">
-  <img src="img/logo/logo-html.svg" alt="Логотип НТМЛ Академии">
+  <img class="html-logo" src="img/logo/logo-html.svg" alt="Логотип НТМЛ Академии">
 </a>
+</div>
 </footer>
 
 </body>

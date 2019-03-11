@@ -33,6 +33,15 @@
     font-weight: 400;
     font-style: normal;
 }
+html{
+     box-sizing: content-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
  margin: 0;
@@ -40,7 +49,186 @@ body {
  line-height: 30px;
  font-family:"Open Sans","Arial",sans-serif;
  color: #464646;
+ min-width: 1160px;
 }
+
+.main-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: rgba(247, 226, 150);
+    align-items: center;
+    outline: #4CAF50 solid 1px;
+
+}
+.main-header-logo {
+    display: block;
+    width: 163px;
+    height: 35px;
+    margin-top: -150px;
+    margin-left: 60px;
+
+    align-self: flex-start;
+    outline: #4CAF50 solid 1px;
+}
+
+
+
+
+
+.main-nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1160px;
+    margin-top: 50px;
+    justify-content: space-between;
+
+  padding: 0;
+
+
+outline: #4CAF50 solid 1px;
+  list-style: none;
+}
+.login {
+    margin-left: 40px;
+     width: 280px;
+  padding-left: 0px;
+outline: #4CAF50 solid 1px;
+}
+.compare,
+.cart{
+    width: 110px;
+    outline: #4CAF50 solid 1px;
+    text-align: right;
+}
+.cart {
+    text-align: right;
+    padding-right: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.search {
+  line-height: 30px;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 60px;
+  margin-top: -10px;
+  width: 500px;
+outline: #4CAF50 solid 1px;
+
+}
+
+
+
+.search-input {
+  font-family: inherit;
+  line-height: 30px;
+  padding: 0 20px 8px 38px;
+  border: 2px solid transparent;
+  border-width: 2px 0;
+  background: transparent  url(../img/icon/icon-search.svg) no-repeat 5px 10px;
+}
+.search-input:focus {
+  border-bottom-color: #000;
+  outline: none;
+}
+.search-button {
+  font-family: inherit;
+  line-height: 30px;
+  padding: 8px 20px;
+  opacity: 0;
+  color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.search-input:focus + .search-button,
+.search-button:focus,
+.search-button:active {
+  opacity: 1;
+  color: inherit;
+}
+.search-input:focus + .search-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.search-button:active {
+  color: #747474;
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.site-navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    /*justify-content: space-between;*/
+    padding-left: 60px;
+    padding-right: 60px;
+outline: #4CAF50 solid 1px;
+    width: 1040px;
+
+    /*padding: 50px 60px;*/
+
+}
+.nav-cataloge {
+   position: relative;
+   width: 540px;
+  margin-left: 0;
+  outline: #4CAF50 solid 1px;
+
+
+}
+.nav-delivery
+
+ {
+padding-left: 230px;
+outline: #4CAF50 solid 1px;
+}
+
+ .nav-warranty{
+    padding-left: 20px;
+ }
+.nav-contacts {
+  width: 180px;
+  text-align: right;
+  outline: #4CAF50 solid 1px;
+  padding-left: 50px;
+  flex-wrap: nowrap;
+
+}
+.dropdown-content{
+    display: none;
+}
+
+
+
+
 
 a
  {
@@ -56,9 +244,7 @@ a:focus,
 a:active {
     opacity: 0.3;
 }
-.serarch-content {
 
-}
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -75,16 +261,36 @@ a:active {
 }
 
 .user-navigation {
-
 color: #000000;
-font-family: "Open Sans";
+font-family: "Open Sans","Arial",sans-serif;
 font-size: 15px;
 line-height: 30px;
 font-weight: 300;
 letter-spacing: 0.01em;
-}
-.nav-bold{
 
+position: relative;
+display: block;
+float: right;
+width: 500px;
+margin-top: -25px;
+margin-left: 100px;
+align-self: flex-end;
+}
+.login{
+    float: left;
+    margin-left: 0;
+}
+.compare{
+    float: right;
+}
+.cart{
+    float: right;
+    order: 1;
+}
+
+
+.nav-bold{
+height: 12px;
 color: #000000;
 font-family: "Gilroy","Arial",sans-serif;
 font-size: 18px;
@@ -100,28 +306,314 @@ font-size: 15px;
 line-height: 36px;
 text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
 .img-nav{
-font-family: "Gilroy","Arial",sans-serif;
-font-size: 18px;
-font-weight: 900;
-color: #000000;
-line-height: 24px;
-letter-spacing: 0.18px;
-background-color: #f7e296;
+ display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 1160px;
+text-decoration: none;
+
+margin-left: auto;
+margin-right: auto;
+
+
 }
+.image-nav-item{
+  margin-right: 40px;
+
+
+
+}
+.imageitems  {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.image-item{
+    width: 160px;
+    height: 160px;
+    background-color: rgba(240, 197, 46, 0.5);
+
+
+outline: #4CAF50 solid 1px;
+
+}
+
+.item-vr img{
+ width: 97px;
+ height: 55px;
+ padding: 52px 32px 53px 31px;
+
+
+}
+
+
+.item-selfie img{
+  width: 86px;
+  height: 117px;
+  padding: 41px 36px 2px 38px;
+
+}
+.item-cam img{
+  width: 71px;
+  height: 87px;
+  padding: 38px 40px 35px 49px;
+}
+.item-brac img{
+  width: 107px;
+  height: 65px;
+  padding: 50px 25px 45px 28px;
+}
+.item-watch{
+  width: 56px;
+  height: 98px;
+  padding: 32px 49px 30px 55px;
+}
+.item-drone{
+  width: 132px;
+  height: 69px;
+  padding: 49px 15px 42px 13px;
+
+}
+
+.img-nav-paragraf{
+  width: 160px;
+  margin: 0;
+  padding-top: 33px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.18px;
+  color: #000000;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+
+}
+.image-nav-item:hover .image-item,
+.image-nav-item:focus .image-item {
+ background-color: rgba(240, 197, 46, 1);
+}
+.image-nav-item:active .main-item-img,
+.image-nav-item:active .img-nav-paragraf{
+  opacity: 0.3;
+}
+
+.info{
+  display: none;
+}
+
+
+.manufacturers{
+   display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 1160px;
+text-decoration: none;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.brands{
+  width: 260px;
+}
+.brands-dji:hover,
+.brands-dji:focus {
+  background-image: url("../img/company/dji2.png");
+}
+.brands-sp:hover,
+.brands-sp:focus {
+ background-image: url("../img/company/sp2.png");
+}
+.brands-gopro:hover,
+.brands-gopro:focus {
+  background-image: url("../img/company/gopro2.png");
+}
+.brands-vive:hover,
+.brands-vive:focus {
+  background-image: url("../img/company/vive2.png");
+}
+
+
+
+
+.shop-info{
+  width: 1160px;
+  margin: 0 auto;
+outline: #4CAF50 solid 1px;
+}
+.about-us{
+  position: relative;
+  float: left;
+  width: 460px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.shop-info h3{
+    padding-top: 45px;
+    padding-bottom: 38px;
+        outline: #4CAF50 solid 1px;
+  }
+/* неработает*/
+.about-us:before,
+.contact-us:before
+ {
+ content: "";
+  position: absolute;
+ top: 45px;
+ left: 0px;
+
+  margin-bottom: 50px;
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+
+}
+.contact-us:before{
+  content: "";
+  position: absolute;
+ bottom: 45px;
+
+  margin-bottom: 50px;
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+
+.contact-us{
+  float: right;
+  width: 560px;
+
+}
+.btn-more-info{
+  padding-top: 80px;
+  margin-bottom: 95px;
+}
+
+.main-footer{
+  min-height: 320px;
+    padding-top: 54px;
+    padding-bottom: 60px;
+}
+
+
+.footer-box {
+
+  width: 1160px;
+  display: block;
+  margin: 0 auto;
+  outline: #4CAF50 solid 1px;
+
+}
+.main-footer-logo img{
+  height: 35;
+  width: 163;
+}
+.footer-user {
+  display: flex;
+  list-style: none;
+float: right;
+width: 330px;
+  padding-right: 0px;
+  justify-content: space-between;
+  outline: #4CAF50 solid 1px;
+
+}
+
+.contact-address{
+  margin-top: 45px;
+  margin-left: 0px;
+  width: 220px;
+   outline: #4CAF50 solid 1px;
+}
+.footer-center{
+  display: flex;
+  list-style: none;
+width: 440px;
+margin-left: 360px;
+margin-top: -25px;
+outline: #4CAF50 solid 1px;
+  justify-content: space-between;
+
+}
+.social:before{
+  content: "";
+    position: absolute;
+    left: 370px;
+
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+justify-content: space-between;
+
+width: 150px;
+margin-left: 450px;
+margin-top: 65px;
+outline: #4CAF50 solid 1px;
+
+}
+.phone{
+  display: flex;
+  float: right;
+  text-align: right;
+   margin-top: -40px;
+
+  margin-right: 0px;
+  width: 168px;
+  color: white;
+  outline: #4CAF50 solid 1px;
+
+}
+
+.html-logo{
+  position: relative;
+  bottom: 80px;
+  right: 0px;
+  width: 27px;
+  height: 35px;
+float: right;
+}
+
+
 .map-popup{
     display: none;
 }
 .form-popup{
     display: none;
 }
-.slider-name::before {
+/*.slider-name::before {
 content: "";
 position: absolute;
 width: 80px;
 height: 7px;
 background-color: #000000;
-}
+padding-top: 0px;
+margin-bottom: 30px;
+}*/
 .slider-name{
 color: #000000;
 font-family: "Gilroy","Arial",sans-serif;
