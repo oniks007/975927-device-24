@@ -43,25 +43,41 @@
 
   <nav class="main-navigation" >
    <ul class="site-navigation">
+
+
+
     <li class="dropdown-menu">
-     <a class="nav-cataloge" href="item-cataloge.html"><span class="nav-bold">Каталог товаров</span> <img src="img/icon/icon-plus.svg"></a>
-     <div class="dropdown-content">
+     <a class="nav-cataloge nav-cataloge-menu" href="item-cataloge.html"><span class="nav-bold">Каталог товаров</span> <img src="img/icon/icon-plus.svg"></a>
+
+
+
+     <div class="dropdown-content wrap">
+
        <ul class="dropdown-content-column">
 
-         <li class="dropdown-column"><a href="virtual-reality.html">Виртуальная реальность</a>
+         <li class="dropdown-column">
+         <a href="#">Виртуальная реальность</a>
          <a href="monopods.html">Моноподы для селфи</a>
          <a href="action.html">Экшн-камеры</a>
          </li>
 
-         <li class="dropdown-column"><a href="fitness-bracelet.html">Фитнесс-браслеты</a>
+         <li class="dropdown-column">
+         <a href="fitness-bracelet.html">Фитнесс-браслеты</a>
          <a href="smart-watch.html">Умные часы</a>
          </li>
 
-         <li class="dropdown-column"><a href="drone.html">Квадрокоптеры</a>
+         <li class="dropdown-column">
+         <a href="drone.html">Квадрокоптеры</a>
          </li>
+
        </ul>
+
      </div>
+
    </li>
+
+
+
    <li class="nav-delivery"><a href="delivery.html"><span class="nav-bold">Доставка</span></a></li>
    <li class="nav-warranty"><a href="warranty.html"><span class="nav-bold">Гарантия</span></a></li>
    <li class="nav-contacts"><a href="contacts.html"><span class="nav-bold">Контакты</span></a></li>
@@ -325,10 +341,19 @@
       <li>ЖелДорЭкспедиция</li>
     </ul>
 
-    <a class="btn-info" href="more-about-us.html">
+    <span class="btn-more-info">
+    <a class="main-btn main-btn-more-about-us" href="more-about-us.html">
       Подробнее о нас
 
     </a>
+  </span>
+
+
+
+
+
+
+
     </span>
   </section>
 
@@ -345,40 +370,64 @@
    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
    проверить работоспособность покупки. Всякое бывает.</p>
 
+
    <a class="place-map" href="map.html">
      <img src="img/contact-info/map.png" alt="Место нахождения">
    </a>
 
-   <div class="map-popup" id="myMap">
-    <button type="button" class="btn cancel" ><img src="img/modal-close.svg">Закрыть</button>
-    <img src="img/contact-info/map-popup.png" alt="Место нахождения">
 
-  </div>
-   <span class="btn-more-info">
-   <a class="btn-info" href="more-about-us.html">
+
+
+
+ <section class="map-popup">
+      <div class="popup-map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.5501888055314!2d37.52942467591858!3d55.68724259244282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1slv!2sru!4v1553110378714" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <button type="button" class="btn-cancel">Закрыть</button>
+      </div>
+    </section>
+    <span class="btn-more-info">
+   <a class="main-btn main-btn-write-us" href="more-about-us.html">
     напишите нам
   </a>
    </span>
 
-  <div class="form-popup" id="myForm">
-    <button type="button" class="btn-cancel"><img src="img/modal-close.svg">Закрыть</button>
-  <form class="form-container" name="contact" method="post" action="/">
-
-    <label for="name">Ваше имя</label>
-    <input type="text" placeholder="Представтесь, пожалуйста" name="name" required>
-
-    <label for="email">Ваш е-mail</label>
-    <input type="email" placeholder="Для отправки ответа" name="email" required>
-
-    <label for="message">Текст письма:</label>
-    <textarea rows="12" cols="100" placeholder="В свободной  форме"  name="message" required ></textarea>
 
 
-    <button type="submit" class="btn">Отправить</button>
+ <section class="form-contact-us">
 
 
-  </form>
-</div>
+      <div class="form-contact-us-wrap">
+        <button type="button" class="btn-cancel">Закрыть</button>
+          <form class="form-container" method="post" action="#">
+
+          <div class="popup-name  popup-name-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" placeholder="Имя Фамилия" name="name" >
+          </div>
+
+
+
+
+          <div class="popup-name  popup-name-email">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" placeholder="email@example.com" name="email" >
+          </div>
+
+          <div class="popup-name  popup-name-message">
+            <label for="message">Текст письма:</label>
+            <textarea  placeholder="В свободной форме" name="message" ></textarea>
+          </div>
+
+          <button class="main-btn" type="submit">Отправить</button>
+
+        </form>
+
+
+
+
+      </div>
+
+    </section>
 
 
 </section>
