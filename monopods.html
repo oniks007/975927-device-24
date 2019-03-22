@@ -116,7 +116,7 @@
 
     <form class="option-filter" name="option-content" action="/option_page.html" method="get" >
 
-     <fieldset>
+     <div class="price-range-wrap" >
       <legend class="form-legend">Стоимость</legend>
       <div class="range-control">
         <div class="price-renge">
@@ -135,57 +135,67 @@
         <span>от 0</span>
         <span>до 5000</span>
       </div>
-    </fieldset>
+    </div>
 
 
 
+      <fieldset class="filter-color">
 
-    <fieldset class="filter-color">
-     <legend class="form-legend">Цвет</legend>
-     <ul class="filter-color-item">
+                <legend class="form-legend">Цвет</legend>
 
-<li class="filter-checkbox">
-     <input class="option-checkbox" type="checkbox"  name="colors[]" value="black" id="black">
-     <label for="black"> Черный </label>
-   </li>
 
-<li class="filter-checkbox">
-     <input class="option-checkbox" type="checkbox" name="colors[]" value="white" id="white">
-     <label for="white">Белый</label>
-   </li>
-<li class="filter-checkbox">
-     <input class="option-checkbox" type="checkbox" name="colors[]" value="blue" id="blue">
-     <label for="blue">Синий</label>
-   </li>
-<li class="filter-checkbox">
-     <input class="option-checkbox" type="checkbox" name="colors[]" value="red" id="red">
-     <label for="red"> Красный</label>
-   </li>
-<li class="filter-checkbox">
-     <input class="option-checkbox" type="checkbox" name="colors[]" value="pink" id="pink">
-     <label for="pink">Розовый</label>
-   </li>
- </ul>
-   </fieldset>
+                <ul class="filter-color-item">
 
-   <fieldset>
-     <legend class="form-legend">Bluetooth</legend>
+                    <li class="filter-checkbox">
+                      <input class="option-checkbox" type="checkbox"  name="colors[]" value="black" id="black" checked>
+                      <label class="option-checkbox-label" for="black"> Черный </label>
 
-<ul class="filter-bl-item">
-  <li class="filter-radiobox">
-     <input class="option-radio" type="radio" value="Есть" name="bluetooth" id="bluetooth-yes">
-     <label for="bluetooth-yes">Есть</label>
-   </li>
- <li class="filter-radiobox">
-     <input class="option-radio" type="radio" value="Нет" name="bluetooth" id="bluetooth-no">
-     <label for="bluetooth-no">Нет</label>
-   </li>
- </ul>
-   </fieldset>
+                    </li>
 
-   <button class="option-button" type="submit">Показать</button>
+                    <li class="filter-checkbox">
+                      <input class="option-checkbox" type="checkbox" name="colors[]" value="white" id="white">
+                      <label class="option-checkbox-label" for="white">Белый</label>
 
- </form>
+                    </li>
+                    <li class="filter-checkbox">
+                     <input class="option-checkbox" type="checkbox" name="colors[]" value="blue" id="blue" checked>
+                     <label class="option-checkbox-label" for="blue">Синий</label>
+                     </li>
+                  <li class="filter-checkbox">
+                     <input class="option-checkbox" type="checkbox" name="colors[]" value="red" id="red" checked>
+                     <label class="option-checkbox-label" for="red"> Красный</label>
+                    </li>
+                  <li class="filter-checkbox">
+                     <input class="option-checkbox" type="checkbox" name="colors[]" value="pink" id="pink">
+                     <label class="option-checkbox-label" for="pink">Розовый</label>
+                  </li>
+
+
+                  </ul>
+              </fieldset>
+
+
+
+              <fieldset class="radio-filter">
+                 <legend class="form-legend">Bluetooth</legend>
+
+                <ul class="filter-bl-item">
+                    <li class="filter-radiobox">
+                      <input class="option-radio  visually-hidden" id="bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
+                      <label class="option-radio-label" for="bluetooth-yes">Есть</label>
+                    </li>
+                    <li class="filter-radiobox">
+                      <input class="option-radio  visually-hidden" id="bluetooth-no" type="radio" name="bluetooth" value="no">
+                      <label class="option-radio-label" for="bluetooth-no">Нет</label>
+                    </li>
+                  </ul>
+              </fieldset>
+
+            <button class="main-btn" type="submit"><span class="intaractive-btn">Показать</span></button>
+          </form>
+
+
+
 </section>
 
 
@@ -265,10 +275,10 @@
           <a class="current page-number" href="#">1</a>
         </li>
         <li>
-          <a class="page-number" href="#">2</a>
+          <a class="page-number page-number-inactive" href="#">2</a>
         </li>
         <li>
-          <a class="page-number" href="#">3</a>
+          <a class="page-number page-number-inactive" href="#">3</a>
 
         </li>
         <li class="pagination-forward">
@@ -296,7 +306,7 @@
 
 
   <ul class="footer-user">
-   <!--<li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png"> Войти</a></li>-->
+
    <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png">  Валентин Петухов <span class="log-out"> Выйти</span></a></li>
 
    <li><a href="compare.html"><img src="img/footer/footer-compare.png"> Сравнить</a></li>
