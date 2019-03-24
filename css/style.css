@@ -207,7 +207,7 @@ margin-left: -4px;
 
     list-style: none;
     outline: #4CAF50 solid 1px;
-    padding: 0 0 60px;
+    padding: 0 0 170px;
     /*margin-bottom: 165px;*/
 
 
@@ -275,9 +275,6 @@ a
   border: 0;
 }
 
-.slider {
-    display: none;
-}
 
 /*.user-navigation {
 color: #000000;
@@ -405,15 +402,11 @@ outline: #4CAF50 solid 1px;
   opacity: 0.3;
 }
 
-.info
-{
-  display: none;
-}
-
 
 .manufacturers{
    display: flex;
 flex-wrap: wrap;
+padding-top: 100px;
 }
 .brands:nth-child(4n){
   margin-right: 0px;
@@ -615,6 +608,19 @@ font-weight: 900;
 line-height: 48px;
 letter-spacing: 0.21px;
 }
+.slider-name-info{
+color: #000000;
+font-family: "Gilroy","Arial",sans-serif;
+font-size: 47px;
+font-weight: 900;
+line-height: 48px;
+letter-spacing: 0.21px;
+    margin: 0;
+    padding-bottom: 31px;
+
+
+
+}
 .transport-company{
 color: #000000;
 font-family: "Gilroy","Arial",sans-serif;
@@ -644,7 +650,7 @@ font-family: "Open Sans","Arial",sans-serif;
 font-size: 15px;
 font-weight: 300;
 line-height: 36px;
-letter-spacing: 0.01em;
+letter-spacing: 0.15px;
 text-align: right;
 }
 .contact-address{
@@ -811,8 +817,6 @@ width: 175px;
 }
 
 .available-items{
-/*display: flex;
-flex-wrap: wrap;*/
  outline: #4CAF50 solid 1px;
  width: 760px;
  margin-left: auto;
@@ -1522,5 +1526,461 @@ padding: 0 60px 0 20px;
 .option-radio-label:active::before,
 .option-radio-label:active::before {
   opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  position: relative;
+  z-index: 1;
+ outline: #4CAF50 solid 1px;
+  margin-top: -160px;
+  padding-bottom: 97px;
+}
+
+.slide-1 {
+  position: relative;
+ outline: #4CAF50 solid 1px;
+z-index: 2;
+  display: flex;
+
+}
+.slide-2{
+    position: relative;
+ outline: #4CAF50 solid 1px;
+z-index: 2;
+  display: flex;
+
+}
+.slide-3{
+    position: relative;
+ outline: #4CAF50 solid 1px;
+z-index: 2;
+  display: flex;
+
+}
+
+
+
+.slide-picture {
+  width: 560px;
+  margin-right: 40px;
+ outline: #4CAF50 solid 1px;
+
+  text-align: center;
+}
+
+.slide-1 img {
+  width: 384px;
+  height: 486px;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+.slide-2 img {
+  width: 345px;
+  height: 485px;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.slide-3 img {
+  width: 526px;
+  height: 334px;
+  margin-top: 65px;
+  margin-left: 30px;
+}
+
+.slide-description {
+  position: relative;
+ outline: #4CAF50 solid 1px;
+
+  width: 560px;
+  padding-top: 78px;
+}
+
+.slide-description::before {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0;
+ outline: #4CAF50 solid 1px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
+
+.slide-description::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: 50px;
+
+  font-weight: 900;
+  font-size: 179px;
+  line-height: 179px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.slide-1 .slide-description::after {
+  content: "01";
+  outline: #4CAF50 solid 1px;
+
+}
+
+.slide-2 .slide-description::after {
+  content: "02";
+
+}
+
+.slide-3 .slide-description::after {
+  content: "03";
+  z-index: -1;
+}
+
+
+.promoution-words {
+  padding-bottom: 20px;
+  color: #000000;
+font-family: "Gilroy", "Arial", sans-serif;
+font-size: 47px;
+font-weight: 900;
+line-height: 56px;
+letter-spacing: 0.17px;
+
+}
+
+.slide-description p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  letter-spacing: 0.15px;
+}
+
+.advantages{
+padding-left:0;
+list-style:none;
+font-size:0;
+margin-top: 70px;
+}
+.advantages li{
+display:inline-block;
+vertical-align:baseline;
+}
+.advantages li:first-of-type{
+width:160px;
+}
+.advantages li:not(:first-of-type){
+width:140px;
+}
+.advantages .advantages-value{
+  color: #000000;
+font-family: "Gilroy" ,"Arial",sans-serif;
+font-size: 36px;
+font-weight: 300;
+line-height: 48px;
+
+letter-spacing: 0.36px;
+}
+.advantages-type{
+  display: block;
+  margin-top: 10px;
+color: #464646;
+font-family: "Open Sans" ,"Arial",sans-serif;
+font-size: 13px;
+font-weight: 300;
+line-height: 20px;
+
+letter-spacing: 0.13px;
+}
+.slider-btn{
+  margin-top: 60px;
+}
+
+.slide-2,.slide-3{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+  position: relative;
+  outline: #4CAF50 solid 1px;
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  top: 163px;
+  left: 0;
+  z-index: -1;
+  outline: #4CAF50 solid 1px;
+  width: 100%;
+  height: 288px;
+ /* height: calc(100% - 164px);*/
+  background-color: #e5e5e5;
+}
+
+.info-wrap {
+  z-index: 1;
+  display: flex;
+  padding-bottom: 118px;
+}
+
+.info-slider {
+  position: relative;
+  order: 2;
+  width: 460px;
+  margin-left: 120px;
+  padding-top: 136px;
+}
+
+.info-slider-delivery::before {
+  content: "";
+  position: absolute;
+  top: 148px;
+  right: -234px;
+  z-index: 0;
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/info/delivery.svg");
+  background-repeat: no-repeat;
+}
+
+.info-slider-warranty {
+  margin-left: 121px;
+}
+
+.info-slider-warranty::before {
+  content: "";
+  position: absolute;
+  top: 124px;
+  right: -253px;
+  z-index: 0;
+  width: 171px;
+  height: 195px;
+  background-image: url("../img/info/warranty.svg");
+  background-repeat: no-repeat;
+}
+
+.info-slider-credit::before {
+  content: "";
+  position: absolute;
+  top: 124px;
+  right: -258px;
+  z-index: 0;
+  width: 156px;
+  height: 188px;
+  background-image: url("../img/info/credit.svg");
+  background-repeat: no-repeat;
+}
+
+.info-slider-credit {
+  width: 430px;
+}
+
+.info-slider p {
+  margin: 0;
+}
+
+.info-controls {
+  position: relative;
+  padding-top: 142px;
+  padding-right: 120px;
+}
+
+.info-controls::before {
+  content: "";
+  position: absolute;
+  top: 63px;
+  right: -4px;
+  width: 7px;
+  height: 320px;
+  background-color: #000000;
+}
+
+.info-label {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  order: 1;
+  width: 160px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  outline: none;
+  }
+
+.info-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+
+  width: 160px;
+  height: 8px;
+  margin-top: -4px;
+
+  background-color: #f0c52e;
+}
+
+.info-label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: -1;
+ outline: none;
+  width: 0;
+  height: 40px;
+
+  background-color: #000000;
+}
+
+.info-label:hover::before {
+  top: 0;
+ outline: none;
+  height: 40px;
+  margin: 0;
+
+  transition: all 0.2s linear;
+}
+
+.info-input[id="delivery"]:checked ~ .info-controls label[for="delivery"],
+.info-input[id="warranty"]:checked ~ .info-controls label[for="warranty"],
+.info-input[id="credit"]:checked ~ .info-controls label[for="credit"] {
+  color: #f7e184;
+}
+
+.info-input[id="delivery"]:checked ~ .info-controls label[for="delivery"]::before {
+  top: 1px;
+  z-index: -1;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="delivery"]:checked ~ .info-controls label[for="delivery"]::after {
+  top: 1px;
+  z-index: -1;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="warranty"]:checked ~ .info-controls label[for="warranty"]::before {
+  top: 0;
+  z-index: -1;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="warranty"]:checked ~ .info-controls label[for="warranty"]::after {
+  top: 0;
+  z-index: -1;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="credit"]:checked ~ .info-controls label[for="credit"]::before {
+  top: 0;
+  z-index: -1;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="credit"]:checked ~ .info-controls label[for="credit"]::after {
+  top: 0;
+  z-index: -1;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+  color: #f7e184;
+  background-color: #000000;
+  transition: all 0.2s linear;
+}
+
+.info-input[id="warranty"]:checked ~ .info-controls label[for="warranty"]::before,
+.info-input[id="credit"]:checked ~ .info-controls label[for="credit"]::before,
+.info-input[id="delivery"]:checked ~ .info-controls label[for="delivery"]::before,
+.info-input[id="warranty"]:checked ~ .info-controls label[for="warranty"]::before,
+.info-input[id="credit"]:checked ~ .info-controls label[for="credit"]::before {
+  display: block;
+}
+
+.info-input[id="delivery"]:checked ~ .info-slider-warranty,
+.info-input[id="delivery"]:checked ~ .info-slider-credit,
+.info-input[id="warranty"]:checked ~ .info-slider-delivery,
+.info-input[id="warranty"]:checked ~ .info-slider-credit,
+.info-input[id="credit"]:checked ~ .info-slider-delivery,
+.info-input[id="credit"]:checked ~ .info-slider-warranty {
+
+  display: none;
 }
 
