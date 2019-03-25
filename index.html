@@ -44,10 +44,10 @@
   <nav class="main-navigation" >
    <ul class="site-navigation">
 
-
+<!--<img src="img/icon/icon-plus.svg">-->
 
     <li class="dropdown-menu">
-     <a class="nav-cataloge nav-cataloge-menu" href="item-cataloge.html"><span class="nav-bold">Каталог товаров</span> <img src="img/icon/icon-plus.svg"></a>
+     <a class="nav-cataloge nav-cataloge-menu" href="item-cataloge.html"><span class="nav-bold cataloge-space" >Каталог товаров</span> </a>
 
 
 
@@ -282,7 +282,7 @@
   </section>
 
           <section class="info">
-
+<div class="conteiner">
           <div class="info-wrap">
 
             <input class="info-input  visually-hidden" id="delivery" type="radio" name="info" checked>
@@ -333,7 +333,7 @@
 
           </div>
 
-
+</div>
       </section>
 
 
@@ -424,6 +424,7 @@
       <div class="popup-map-wrap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.5501888055314!2d37.52942467591858!3d55.68724259244282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1slv!2sru!4v1553110378714" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <button type="button" class="btn-cancel">Закрыть</button>
+        <img src="../img/contact-info/map-popup.png" width="960px" height="560px">
       </div>
     </section>
     <span class="btn-more-info">
@@ -443,7 +444,7 @@
 
           <div class="popup-name  popup-name-name">
             <label for="name">Ваше имя:</label>
-            <input type="text" placeholder="Имя Фамилия" name="name" >
+            <input type="text" placeholder="Имя Фамилия" id="name" name="name" >
           </div>
 
 
@@ -451,12 +452,12 @@
 
           <div class="popup-name  popup-name-email">
             <label for="email">Ваш e-mail:</label>
-            <input type="email" placeholder="email@example.com" name="email" >
+            <input type="email" placeholder="email@example.com" id="email" name="email" >
           </div>
 
           <div class="popup-name  popup-name-message">
             <label for="message">Текст письма:</label>
-            <textarea  placeholder="В свободной форме" name="message" ></textarea>
+            <textarea  placeholder="В свободной форме" id="message" name="message" ></textarea>
           </div>
 
           <button class="main-btn" type="submit">Отправить</button>
@@ -479,7 +480,7 @@
 
 <footer class="main-footer">
 <div class="footer-box wrap">
-  <a class="main-footer-logo" >
+  <a class="main-footer-logo" href="#" >
     <img src="img/logo/logo-footer.png" width="163" height="35" alt="Логотип магазина Device">
   </a>
 
