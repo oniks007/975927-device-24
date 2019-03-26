@@ -28,13 +28,13 @@
 
     <li class="login">
 
-    <a href="log-in.html"><img src="img/icon/icon-user.svg" alt="">  Валентин Петухов <span class="log-out">  Выйти </span> </a>
+    <a href="log-in.html"><img src="img/icon/icon-user.svg" width="13" height="12" alt="">  Валентин Петухов <span class="log-out">  Выйти </span> </a>
   </li>
   <li class="compare">
-    <a href="compare.html"><img src="img/icon/icon-compare.svg" alt=""> Сравнить</a>
+    <a href="compare.html"><img src="img/icon/icon-compare.svg" width="10" height="10" alt=""> Сравнить</a>
   </li>
   <li class="cart">
-    <a href="troley.html"><img src="img/icon/icon-cart.svg" alt=""> Корзина</a>
+    <a href="troley.html"><img src="img/icon/icon-cart.svg" width="12" height="12" alt=""> Корзина</a>
   </li>
 
 </ul>
@@ -112,30 +112,43 @@
 
 
   <section class="filter-conteiner">
-    <div class="filter-title">Фильтр:</div>
 
-    <form class="option-filter" name="option-content" action="/option_page.html" method="get" >
+ <div class="filter-title">Фильтр:</div>
 
-     <div class="price-range-wrap" >
-      <div class="form-legend">Стоимость</div>
-      <div class="range-control">
-        <div class="price-renge">
-          <div class="scale">
 
-          </div>
-        </div>
-        <div class="pointer pointer-min">
 
-        </div>
-        <div class="pointer pointer-max">
 
-        </div>
-      </div>
-      <div class="selected-price">
-        <span>от 0</span>
-        <span>до 5000</span>
-      </div>
-    </div>
+
+          <form class="price-filter" method="get" action="#">
+
+            <div class="price-filter-wrap">
+              <fieldset class="price-filter-item  price-filter-item-price">
+                <legend>Стоимость</legend>
+                <div class="price-filter-range">
+                  <div class="price-filter-range-controls">
+                    <div class="price-filter-scale">
+                      <div class="price-filter-bar"></div>
+                    </div>
+                    <div class="price-filter-btn  price-filter-btn-min"></div>
+                    <div class="price-filter-btn  price-filter-btn-max"></div>
+                  </div>
+
+                  <div>
+                    <label class="price-filter-label  price-filter-label-min">от
+                      <input class="price-filter-input" type="text" name="min-price" value="0">
+                    </label>
+                    <label class="price-filter-label  price-filter-label-max">до
+                      <input class="price-filter-input" type="text" name="max-price" value="5000">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+
+
+
+
 
 
 
@@ -215,8 +228,8 @@
 </div>
 
 <div class="sort-direction">
- <a class="direction-up" href="#" ><img src="img/icon/icon-up-dir.svg" alt="Вверх"></a>
- <a class="direction-down" href="#"><img src="img/icon/icon-down-dir.svg" alt="Вниз"></a>
+ <a class="direction-up" href="#" ><img src="img/icon/icon-up-dir.svg" width="11" height="10" alt="Вверх"></a>
+ <a class="direction-down" href="#"><img src="img/icon/icon-down-dir.svg" width="11" height="10" alt="Вниз"></a>
 </div>
 </section>
 
@@ -323,10 +336,10 @@
 
   <ul class="footer-user">
 
-   <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png" alt="">  Валентин Петухов <span class="log-out"> Выйти</span></a></li>
+   <li class="login-link"><a href="img/log-in.html"><img src="img/footer/footer-user.png" width="13" height="12" alt="">  Валентин Петухов <span class="log-out"> Выйти</span></a></li>
 
-   <li><a href="compare.html"><img src="img/footer/footer-compare.png" alt=""> Сравнить</a></li>
-   <li><a href="troley.html"><img src="img/footer/footer-cart.png" alt=""> Корзина</a></li>
+   <li><a href="compare.html"><img src="img/footer/footer-compare.png" width="10" height="10" alt=""> Сравнить</a></li>
+   <li><a href="troley.html"><img src="img/footer/footer-cart.png" width="12" height="12" alt=""> Корзина</a></li>
 
  </ul>
 
@@ -349,13 +362,13 @@
 <div class="footer-bottom">
 
 <ul class="social">
-  <li><a class="social-button" href="www.facebook.com"><img src="img/social/fb.svg" alt="" >Facebook</a></li>
-  <li><a class="social-button" href="www.instagram.com"><img src="img/social/instagram.svg" alt="">Instagram</a></li>
-  <li><a class="social-button" href="www.twitter.com"><img src="img/social/twitter.svg" alt="" >Twitter</a></li>
+  <li><a class="social-button" href="www.facebook.com"><img src="img/social/fb.svg" width="32" height="32" alt="" >Facebook</a></li>
+  <li><a class="social-button" href="www.instagram.com"><img src="img/social/instagram.svg" width="32" height="32" alt="">Instagram</a></li>
+  <li><a class="social-button" href="www.twitter.com"><img src="img/social/twitter.svg" width="32" height="32" alt="" >Twitter</a></li>
 </ul>
 
 <a href="https://htmlacademy.ru/">
-  <img class="html-logo" src="img/logo/logo-html.svg" alt="Логотип НТМЛ Академии">
+  <img class="html-logo" src="img/logo/logo-html.svg" width="27" height="35" alt="Логотип НТМЛ Академии">
 </a>
 </div>
 </div>
